@@ -9,7 +9,7 @@ xmlhttp.onreadystatechange = function()
         var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
         document.getElementById("demo").innerHTML = jsonPretty;
     }
-}
+};
 
 xmlhttp.open("GET", "http://bitcoin.mubiz.com/info", true);
 xmlhttp.send();
