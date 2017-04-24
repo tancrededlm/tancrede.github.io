@@ -1,0 +1,128 @@
+<html><head>
+<meta charset="UTF-8">
+
+<title>Titre à modifier</title>
+
+
+
+<!-- BOOTSTRAP -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><style></style>
+
+
+<link rel="stylesheet" media="all" type="text/css" href="styles/design.css">
+
+<!-- Fonts Awesome : Pour les icones -->
+<link href="https://blackrockdigital.github.io/startbootstrap-sb-admin/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<!-- BITCOIN -->
+<script type="text/javascript" src="js/bitcoin.js" defer=""></script>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" rel="home" title="">Baptiste</a>
+			</div>
+			<div class="navbar-collapse collapse" id="navbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a  title="Bitcoin exploreur">Bitcoin</a></li>
+				</ul>
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html" title="Bitcoin exploreur">Index</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container theme-showcase" role="main">
+		<div class="jumbotron">
+			<h1 class="fa fa-laptop" id="titre" onmouseover="titreHover()" onmouseleave="titreNoHover()">Bitcoin</h1>
+		</div>
+	</div>
+
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="panel panel-yellow blockinfo">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-3">
+									<i class="fa fa-bicycle fa-5x"></i>
+								</div>
+								<div class="col-xs-9 text-right">
+									<h2>
+										<span id="bitcoin_block_number"></span>
+									</h2>
+									<div>Blocks</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 blockinfo">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-3">
+									<i class="fa fa-chain-broken fa-5x"></i>
+								</div>
+								<div class="col-xs-9 text-right">
+									<h2>
+										<span id="bitcoin_network_hash"></span>
+									</h2>
+									<div>Difficulté</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 blockinfo">
+					<div class="panel panel-red">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-3">
+									<i class="fa fa-clock-o fa-5x"></i>
+								</div>
+								<div class="col-xs-9 text-right">
+									<h2>
+										<span id="bitcoin_blocks"></span>
+									</h2>
+									<div>Durée entre 2 blocks</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 blockinfo">
+					<div class="panel panel-green">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-3">
+									<i class="fa fa-money fa-5x"></i>
+								</div>
+								<div class="col-xs-9 text-right">
+									<h2>
+										<span id="bitcoin_usd_price"></span>
+									</h2>
+									<div> Prix d'un bitcoin</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</body></html>
