@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><style></style>
 
+<script type="text/javascript" src="js/qrcode.js"></script>
+
 
 <link rel="stylesheet" media="all" type="text/css" href="styles/design.css">
 
@@ -40,6 +42,7 @@
 
 	<div class="container theme-showcase" role="main">
 		<div class="jumbotron">
+		     <div id="qrcode" style="width:75px; height:75px ;display: inline-block;"></div>
 			<h1 class="fa fa-laptop" id="titre" onmouseover="titreHover()" onmouseleave="titreNoHover()">Bitcoin</h1>
 		</div>
 	</div>
@@ -124,5 +127,25 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width : 100,
+	height : 100
+});
+function makeCode () {		
+	qrcode.makeCode("http://mubizinc.github.io/3a/");
+}
+makeCode();
+$("#text").
+	on("blur", function () {
+		makeCode();
+	}).
+	on("keydown", function (e) {
+		if (e.keyCode == 13) {
+			makeCode();
+		}
+	});
+</script>
 
 </body></html>
